@@ -44,6 +44,8 @@
         <p>A branch is an independent line of development and each repository will contain at least one branch. When a user is planning on making any changes to the "main" branch they can create a new branch that acts as a "child" branch. This creates an isolated environment where any changes can be made without having any affect on the existing main branch.</p>
         <h3>Commit</h3>
         <p>After a branch has been created you can start making changes. When the file has been modified that changes can be committed to the branch. Each commitment to the branch must contain an associated message explaining why the change was made which allows an history of what you have done.</p>
+        <p>Below is a example of commits I have made for this webpage</p>
+        <img src="Images\github-commit-history.png" alt="a screenshot of git commit history">
         <h3>Pull Requests</h3>
         <p>A pull request is a comparison of two branches. Once a commit has been made you can open a pull request and discuss any commits that have been made.After a pull request has been made users may have comments or things that they may disagree with in the project. This can give you an opportunity to make additional commits to the branch to ensure that nothing gets into the main branch without being well tested and approved.</p>
         <h3>Merge branch</h3>
@@ -52,15 +54,31 @@
         <h2>The Unix Shell</h2>
         <p>The Unix shell is a medium to interact with the kernel (control of computer operations). It gathers input from a user, executes a programme based from the input and displays the outcome from the execution of the program.</p>
         <br>
-        <p><b>The below will show my basic interaction with the shell GitBash:</b></p>
-        <h3></h3>
+        <p><b>The below will show some basic interactions that can be done within the shell GitBash:</b></p>
+        <h3>Listing files in a directory</h3>
+        <p>When the terminal has loaded for Gitbash, to find out my current working location I will need to type the following command <b>pwd</b>. This is asking the terminal to "Print Working Directory". The output from the terminal will state which directory we are currently occupying.</p>
+        <p>In order to <i>list</i> the files within that directly we will need to input <b>ls</b>. The output should print all the files within the current working directory. If you would like to see all files (including hidden files) use the prompt <b>ls -a</b></p>
+        <h3>Changing the working directory</h3>
+        <p>In order to change the directory we are in we will need to input <b>cd "name of file"</b> into the terminal. If you know the stages of the directory you want to get to you could follow the <b>cd</b> command with a "/" and the subsequent directory you want to go to. <i>For example: cd desktop/my-web-files/web-file-1</i></p>
+        <p>To return to a previous directory use the following input <b>cd ..</b>. Additionally if you would like to move back through multiple directories you can add a / following multiple .. commands. <i>For example: cd ../../.. will take you back three directories.</i></p>
+        <img src="Images\gitbash-functions.gif" alt="a gif representing the function of listing files and changing the working directory" height="300px">
+        <h3>Creating new directories</h3>
+        <p>If you would like to create a new directory within the current working directory you will need to input <b>mkdir "name of new directory"</b>.</p>
+        <h3>Creating and removing files</h3>
+        <p> In order to create a new file you will need to use the <b>touch "name of file"</b> (i.e. touch README.md) input which will add the file to your current working directory.</p>
+        <p>If you happen to make a mistake and want to remove a file use the <b>rm "name of file"</b> (i.e rm README.md) input.</p>
+        <img src="Images\gitbash-rm-create.gif" alt="a gif representing the creation and removal of files" height="300px">
+        <br>
+        <p>A useful note: If you ever feel like your terminal is getting too cluttered use the <b>clear</b> command to empty the current screen.</p>
+        <p>Also if you ever need help with any input command simply add <b>--help</b> to bring up a help output for your command and the actions you can carry out</p>
+
+
 
     
 
 
 
 
-        <img src="C:\Users\markh\OneDrive\Desktop\week1-task\week1-simple-webpage\gif1.gif" height="300px">
                 
     </body>
 </html>
