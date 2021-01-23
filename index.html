@@ -4,87 +4,297 @@
         <style>
             body
             {
-                font-family: sans-serif;
+                
+                text-align: justify;
+                font-family: Arial, Helvetica, sans-serif;
             }
-            h1
+            header
+            {
+                background-color: black;
+                color: white;                
+                margin: 25px;
+                padding: 50px; 
+                text-align: center;
+            }
+            ul
+            {
+                margin: 0;
+                padding: 0;
+                list-style-type: none; 
+            }
+            li
+            {
+                display: inline-block;
+                text-align: center;
+                background-color:#CC5500;
+                margin: 15px;
+                padding: 10px;
+                border: black solid 2px;
+                border-radius: 25px;
+            }
+           li a
+            {
+                text-decoration: none;
+                color: white;
+            }
+            header h1
+            {
+                font-size: 3.5em;
+                text-align: center;
+                color: white;
+                padding: 50px; 
+                margin:50px 0 25 0;
+                padding: 25px;                               
+            }
+            
+            header ul
+            {
+                margin: 0;
+                padding: 0;
+                list-style-type: none; 
+            }
+            header li
+            {
+                display: inline-block;
+                text-align: center;
+                background-color:#CC5500;
+                margin: 15px;
+                padding: 10px;
+                border: white solid 2px;
+                border-radius: 25px;
+            }
+            header li a
+            {
+                text-decoration: none;
+                color: white;
+            }
+            .git-github
+            {
+                margin: 0px 25px 0px 25px;
+                padding: 0px 50px 0px 50px; 
+                text-align: justify; 
+            }
+           
+            .git-github div
+            {   
+                padding-bottom: 50px;
+            }
+            
+            .flow
+            {
+                margin: 0px 25px 0px 25px;
+                padding: 0px 50px 0px 50px; 
+                text-align: justify; 
+            }
+            
+           .shell
+           {
+            margin: 0px 25px 0px 25px;
+            padding: 0px 50px 0px 50px; 
+            text-align: justify;  
+           }
+                        
+            h2, h3
             {
                 text-align: center;
             }
-            h2
-            {
-                text-align: center;
-            }
+            
             img
             {
                 align-items: center;
             }
+            .demonstration 
+            {
+                margin: 0px 25px 0px 25px;
+                padding: 0px 50px 0px 50px; 
+                text-align: justify; 
+            }
+                        
         </style>
         <title>TDA - Week 1</title>
     </head>
+
     <body>
-        <h1><u>Git version control and the Unix shell</u></h1>
+        <!--webpage header-->
+        <header>
+             <!-- navigation section within header -->
+            <nav id="header">
+                <ul>
+                    <li><a href="#git/github">Git and GitHub</a></li>
+                    <li><a href="#workflow">GitHub workflow</a></li>
+                    <li><a href="#unix">The unix shell</a></li>
+                    <li><a href="#demo">Unix Shell examples</a></li>
+                </ul>
+            </nav>
+            <h1 >TDA Week One: <br><br>Git Version Control and the Unix Shell</h1>
+        </header>
         <br>
-        <h2><b>Git and Github</b></h2>
+        <!--end of header-->
+
+        <!--start of git and github section-->
+                
+        <div class="git-github">
+        
+        <h2 id="git/github"><b>Git and Github</b></h2>
         <center><img src="Images\git-github.png" alt="The Git and Github logos side by side" height="200px"></center>
-        <ul>
-            <li>What is the difference between <b>Git</b> and <b>Github</b>?</li>
-        </ul>
-        <img src="Images\git.png" alt="The Git logo" height="100px">
-        <p><b>Git</b> is a version control system. It allows the user/s the ability top to track and manage multiple changes to a file or project. Git lets a user to create a exact version of the main file (also called a branch) to amend or edit. Any changes can be reviewed by peers for approval before it is applied to the main file (merged).</p>
-        <img src="Images\github.png" alt="The Github logo" height="100px">
-        <p><b>Github</b> is a cloud based service to host multiple repositories. A repository is a container for maintaining files, it can interact with Git to record and keep track of the file history when any changes are made. GitHub works in conjunction with Git coordinating to host multiple projects and allow users to access these projects from anywhere. The files can be hosted to be public and open source, or closed/private for specific colleagues to work with.</p>
-        <h2><b>The Github Workflow</b></h2>
-        <p>When you are working on a project within a team there will most likely be a number of ideas around new features, integrations and optimization. If everybody made changes to the code without consultation, it could lead to problems with the main codes and files. The GitHub workflow makes the managing of a project much easier</p>
+       
+        <div><img src="Images\git.png" alt="The Git logo" height="100px">
+
+        <b>Git</b> is a version control system. It allows the user/s the ability top to track and manage multiple 
+            changes to a file or project. Git lets a user to create a exact version of the main file (also called a branch) 
+            to amend or edit. Any changes can be reviewed by peers for approval before 
+            it is applied to the main file (merged).</div>
+
+        <div><img src="Images\github.png" alt="The Github logo" height="100px">
+        <b>Github</b> is a cloud based service to host multiple repositories. A repository is a container for maintaining 
+            files, it can interact with Git to record and keep track of the file history when any changes are made. GitHub 
+            works in conjunction with Git coordinating to host multiple projects and allow users to access these projects 
+            from anywhere. The files can be hosted to be public and open source, or closed/private for specific colleagues 
+            to work with.</div>
+        <nav>
+            <ul>
+                <li><a href="#header">Back to the top</a></li>
+                <li><a href="#workflow">GitHub workflow</a></li>
+                <li><a href="#unix">The unix shell</a></li>
+                <li><a href="#demo">Unix Shell examples</a></li>
+            </ul>
+        </nav>    
+        </div>
+        <br>
+        <br>
+
+        <!--end of git and github section-->
+        
+        <!--start of workflow section-->
+
+        <div class="flow">
+
+        <h2 id="workflow"><b>The Github Workflow</b></h2>
+        <br>
+
+        <p>When you are working on a project within a team there will most likely be a number of ideas around new features, 
+            integrations and optimization. If everybody made changes to the code without consultation, it could lead to 
+            problems with the main codes and files. The GitHub workflow makes the managing of a project much easier</p>
         <br>
         <center><img src="Images\GitHub-Flow.png" alt="An diagram representing the GitHub Workflow" width="600px"></center>
         <center><p><i>Image source <a href="https://build5nines.com/introduction-to-git-version-control-workflow/">build5nines</a> </i></p></center>
-        <h3>The "main/master" branch</h3>
-        <p>The main (also known as "master") branch is the main code/file/project where all changes eventually get merged back into. This is the official working version of your project. The master branch is meant to be stable, and it is the social contract of open source software to never, ever push anything to master that is not tested, or that breaks the build.</p>
-        <h3>Creating a branch</h3>
-        <p>A branch is an independent line of development and each repository will contain at least one branch. When a user is planning on making any changes to the "main" branch they can create a new branch that acts as a "child" branch. This creates an isolated environment where any changes can be made without having any affect on the existing main branch.</p>
-        <h3>Commit</h3>
-        <p>After a branch has been created you can start making changes. When the file has been modified that changes can be committed to the branch. Each commitment to the branch must contain an associated message explaining why the change was made which allows an history of what you have done.</p>
-        <p>Below is a example of commits I have made for this webpage</p>
-        <img src="Images\github-commit-history.png" alt="a screenshot of git commit history" height= "300px">
-        <h3>Pull Requests</h3>
-        <p>A pull request is a comparison of two branches. Once a commit has been made you can open a pull request and discuss any commits that have been made.After a pull request has been made users may have comments or things that they may disagree with in the project. This can give you an opportunity to make additional commits to the branch to ensure that nothing gets into the main branch without being well tested and approved.</p>
-        <h3>Merge branch</h3>
-        <p>After all the changes have been made in the branch and the pull request has been approved, the branch can be merged into the main branch. This will commit all of the changes that have been applied in the "child" branch and apply them to the main branch. </p>
         <br>
-        <h2>The Unix Shell</h2>
-        <p>The Unix shell is a medium to interact with the kernel (control of computer operations). It gathers input from a user, executes a programme based from the input and displays the outcome from the execution of the program.</p>
+        <br>
+        <h3>The "main/master" branch</h3>
+        <p>The main (also known as "master") branch is the main code/file/project where all changes eventually get 
+            merged back into. This is the official working version of your project. The master branch is meant to 
+            be stable, and it is the social contract of open source software to never, ever push anything to master 
+            that is not tested, or that breaks the build.</p>
+            <br>
+        <h3>Creating a branch</h3>
+        <p>A branch is an independent line of development and each repository will contain at least one branch. When a 
+            user is planning on making any changes to the "main" branch they can create a new branch that acts as 
+            a "child" branch. This creates an isolated environment where any changes can be made without having any 
+            affect on the existing main branch.</p>
+            <br>
+        <h3>Commit</h3>
+        <p>After a branch has been created you can start making changes. When the file has been modified that changes can 
+            be committed to the branch. Each commitment to the branch must contain an associated message explaining why the 
+            change was made which allows an history of what you have done.</p>
+        <p>Below is a example of commits I have made for this webpage:</p>
+        <img src="Images\github-commit-history.png" alt="a screenshot of git commit history" height= "400px">
+        <br>
+        <h3>Pull Requests</h3>
+        <p>A pull request is a comparison of two branches. Once a commit has been made you can open a pull request and discuss 
+            any commits that have been made.After a pull request has been made users may have comments or things that they may 
+            disagree with in the project. This can give you an opportunity to make additional commits to the branch to ensure 
+            that nothing gets into the main branch without being well tested and approved.</p>
+            <br>
+        <h3>Merge branch</h3>
+        <p>After all the changes have been made in the branch and the pull request has been approved, the branch can be 
+            merged into the main branch. This will commit all of the changes that have been applied in the "child" branch 
+            and apply them to the main branch. </p>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="#header">Back to the top</a></li>
+                <li><a href="#git/github">Git and GitHub</a></li>
+                <li><a href="#unix">The unix shell</a></li>
+                <li><a href="#demo">Unix Shell examples</a></li>
+            </ul>
+        </nav>    
+        </div>
+        <br>
+        <br>
+        <!--end of workflow section-->
+
+        <!--start of the unix section-->
+        <div class="shell">
+
+        <h2 id="unix">The Unix Shell</h2>
+        <p>The Unix shell is a medium to interact with the kernel (control of computer operations). It gathers input 
+            from a user, executes a programme based from the input and displays the outcome from the execution of the 
+            program.</p>
         <br>
         <p><b>The below will show some basic interactions that can be done within the shell GitBash:</b></p>
         <h3>Listing files in a directory</h3>
-        <p>When the terminal has loaded for Gitbash, to find out my current working location I will need to type the following command <b>pwd</b>. This is asking the terminal to "Print Working Directory". The output from the terminal will state which directory we are currently occupying.</p>
-        <p>In order to <i>list</i> the files within that directly we will need to input <b>ls</b>. The output should print all the files within the current working directory. If you would like to see all files (including hidden files) use the prompt <b>ls -a</b></p>
+        <p>When the terminal has loaded for GitBash, to find out my current working location I will need to type the 
+            following command <b>pwd</b>. This is asking the terminal to "Print Working Directory". The output from 
+            the terminal will state which directory we are currently occupying.</p>
+        <p>In order to <i>list</i> the files within that directly we will need to input <b>ls</b>. The output should 
+            print all the files within the current working directory. If you would like to see all files (including hidden 
+            files) use the prompt <b>ls -a</b></p>
         <h3>Changing the working directory</h3>
-        <p>In order to change the directory we are in we will need to input <b>cd "name of file"</b> into the terminal. If you know the stages of the directory you want to get to you could follow the <b>cd</b> command with a "/" and the subsequent directory you want to go to. <i>For example: cd desktop/my-web-files/web-file-1</i></p>
-        <p>To return to a previous directory use the following input <b>cd ..</b>. Additionally if you would like to move back through multiple directories you can add a / following multiple .. commands. <i>For example: cd ../../.. will take you back three directories.</i></p>
-        <img src="Images\gitbash-functions.gif" alt="a gif representing the function of listing files and changing the working directory" height="300px">
+        <p>In order to change the directory we are in we will need to input <b>cd "name of file"</b> into the terminal. 
+            If you know the stages of the directory you want to get to you could follow the <b>cd</b> command with a "/" and 
+            the subsequent directory you want to go to. <i>For example: cd desktop/my-web-files/web-file-1</i></p>
+        <p>To return to a previous directory use the following input <b>cd ..</b>. Additionally if you would like to move 
+            back through multiple directories you can add a / following multiple .. commands. <i>For example: cd ../../.. will 
+                take you back three directories.</i></p>
+        <img src="Images\gitbash-functions.gif" alt="a gif representing the function of listing files and changing 
+        the working directory" height="400px">
         <h3>Creating new directories</h3>
-        <p>If you would like to create a new directory within the current working directory you will need to input <b>mkdir "name of new directory"</b>.</p>
+        <p>If you would like to create a new directory within the current working directory you will need to input 
+            <b>mkdir "name of new directory"</b>.</p>
         <h3>Creating and removing files</h3>
-        <p> In order to create a new file you will need to use the <b>touch "name of file"</b> (i.e. touch README.md) input which will add the file to your current working directory.</p>
-        <p>If you happen to make a mistake and want to remove a file use the <b>rm "name of file"</b> (i.e rm README.md) input.</p>
-        <img src="Images\gitbash-rm-create.gif" alt="a gif representing the creation and removal of files" height="300px">
+        <p> In order to create a new file you will need to use the <b>touch "name of file"</b> (i.e. touch README.md) 
+            input which will add the file to your current working directory.</p>
+        <p>If you happen to make a mistake and want to remove a file use the <b>rm "name of file"</b> (i.e rm README.md) 
+            input.</p>
+        <img src="Images\gitbash-rm-create.gif" alt="a gif representing the creation and removal of files" height="400px">
         <br>
-        <p>A useful note: If you ever feel like your terminal is getting too cluttered use the <b>clear</b> command to empty the current screen.</p>
-        <p>Also if you ever need help with any input command simply add <b>--help</b> to bring up a help output for your command and the actions you can carry out</p>
+        <p>A useful note: If you ever feel like your terminal is getting too cluttered use the <b>clear</b> command to 
+            empty the current screen.</p>
+        <p>Also if you ever need help with any input command simply add <b>--help</b> to bring up a help output for your 
+            command and the actions you can carry out</p>
+        <nav>
+            <ul>
+                <li><a href="#header">Back to the top</a></li>
+                <li><a href="#git/github">Git and GitHub</a></li>
+                <li><a href="#workflow">GitHub workflow</a></li>
+                <li><a href="#demo">Unix Shell examples</a></li>
+            </ul>
+        </nav>    
+        </div>
         <br>
         <br>
-        <h3>GitBash in Action</h3>
-        <br>
+        <!--end of unix shell section-->
+
+        <!-- start of demo section-->
+
+        <div class="demonstration">
+        <h3 id="demo">GitBash in Action</h3>
+        <br>        
         <h4>Creating a branch</h4>
-        <img src="Images\branch-creation.gif" alt="gif showing the creation of a branch using gitbash" height="300px">
+        <img src="Images\branch-creation.gif" alt="gif showing the creation of a branch using gitBash" height="300px">
         <h4>Committing the changes</h4>
-        <img src="Images\commit-changes.gif" alt="gif showing the commitment of changes and pushing these to github" height="300px">
-        <h4>Merging the branch with the main</h4>
-
-
-
-
-    
+        <img src="Images\commit-changes.gif" alt="gif showing the commitment of changes and pushing these 
+        to github" height="300px">
+        <nav>
+            <ul>
+                <li><a href="#header">Back to the top</a></li>
+                <li><a href="#git/github">Git and GitHub</a></li>
+                <li><a href="#workflow">GitHub workflow</a></li>
+                <li><a href="#unix">The unix shell</a></li>
+            </ul>
+        </nav>  
+        
+        </div>   
 
 
 
